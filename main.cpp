@@ -2,6 +2,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
+#include "player.h"
 
 
 int main(int argc, char *argv[])
@@ -57,6 +58,8 @@ int main(int argc, char *argv[])
     };
 
     State gameState = STATE_MENU;
+
+    Player P1;
 
 
     //start render loop
@@ -136,8 +139,10 @@ int main(int argc, char *argv[])
             break;
         }
 
-
+        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
         SDL_RenderClear(renderer);
+        SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+        SDL_RenderFillRect(renderer, P1.GetPaddle());
         SDL_RenderPresent(renderer);
 
     }

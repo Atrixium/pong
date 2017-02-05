@@ -1,7 +1,24 @@
 # depslib dependency file v1.0
-1485238669 source:/home/rob/Dropbox/Projects/pong/main.cpp
+1486273403 source:/home/rob/Dropbox/Projects/pong/main.cpp
 	<iostream>
 	<SDL2/SDL.h>
 	<SDL2/SDL_image.h>
 	<SDL2/SDL_ttf.h>
+	"player.h"
+
+1485674024 source:/home/rob/Dropbox/Projects/pong/src/ball.cpp
+	"ball.h"
+
+1485674024 /home/rob/Dropbox/Projects/pong/include/ball.h
+
+1485674007 source:/home/rob/Dropbox/Projects/pong/src/game.cpp
+	"game.h"
+
+1485674007 /home/rob/Dropbox/Projects/pong/include/game.h
+
+1486273261 source:/home/rob/Dropbox/Projects/pong/src/player.cpp
+	"player.h"
+
+1486273273 /home/rob/Dropbox/Projects/pong/include/player.h
+	<SDL2/SDL.h>
 

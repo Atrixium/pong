@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +34,18 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Linker>
+			<Add option="-lSDL2" />
+			<Add option="-lSDL2_image" />
+			<Add option="-lSDL2_ttf" />
+		</Linker>
+		<Unit filename="include/ball.h" />
+		<Unit filename="include/game.h" />
+		<Unit filename="include/player.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/ball.cpp" />
+		<Unit filename="src/game.cpp" />
+		<Unit filename="src/player.cpp" />
 		<Extensions>
 			<envvars />
 			<code_completion />
